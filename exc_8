@@ -1,0 +1,12 @@
+fun main () {
+    val a = 18
+    val b = 6
+    val c = 9
+    val d = 3
+    
+    val a1 = (a/b) * (c%d)
+    val a2 = (a - c) / (b * d)
+    val a3 = (b * d) - (b + (d % c))
+    
+    println ((a1 * a2) - a3);
+}
