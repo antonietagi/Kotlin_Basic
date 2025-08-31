@@ -1,0 +1,12 @@
+fun main () {
+    var a = 15
+    var b = 5
+    var x: Int
+    
+    while (a % b != 0) {
+        x = a % b
+        a = b
+        b = x
+    }
+    println(b)
+}
