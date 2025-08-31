@@ -1,0 +1,23 @@
+fun main () {
+    val list = arrayOf(2, 3, 4 ,5, 6, 7, 8)
+    var i = 0
+    var w = 0
+    
+    while(i< list.size) {
+        if(i % 2 == 1)
+        	w=2
+        else
+        	w=5
+        i++
+    }
+    
+    print (
+    when (w) {
+        1 -> "um"
+        2 ->"dois"
+        3 ->"três"
+        5 ->"cinco"
+        else -> "outro"
+    }
+    )
+}
