@@ -1,0 +1,21 @@
+fun classifica (num:Int): String {
+    return when (num) {
+        2 -> "X"
+        3 -> "Y"
+        7 -> "Z"
+        else -> "W"
+    }
+}
+
+fun main () {
+    val lista = arrayOf(2,4,3,6,7,9,10)
+    var i = 0
+    
+    while(i < lista.size) {
+        if(i%2 == 0) {
+            val opt = lista[i]
+            print(classifica(opt) + "")
+        }
+        i++
+    }
+}
