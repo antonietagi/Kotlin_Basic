@@ -1,0 +1,22 @@
+fun tarifa(x: Double, isVip: Boolean): Double {
+    val cost = if(isVip) {
+        if (x<= 6) {
+            60.0
+        } else {
+            120.0
+        }
+    } else {
+        if( x<=6) {
+            30.0
+        } else {
+            50.0
+        }
+    }
+    return cost
+}
+
+fun main() {
+    val x = 8.0 
+    val isVip = true
+    println(tarifa(x,isVip))
+}
