@@ -1,0 +1,10 @@
+fun quadrado(x: Int) = x * x
+
+fun ehPar(x: Int) = if (x % 2 == 0) "x" else "y"
+
+fun serie(n: Int): Int = if (n <= 1) n else serie (n-1) + serie(n-3)
+
+fun main() {
+    val numero = 7
+    println("${quadrado(numero)} ${ehPar(numero)} ${serie(numero)}")
+}
