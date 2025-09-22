@@ -1,0 +1,12 @@
+fun calcularInvestimento(valorInicial: Double, taxaJuros: Double, anos: Int:) Double {
+    var valorFinal = valorInicial
+    for(i in 1..anos) {
+        valorFinal += valorFinal * (taxaJuros / 100)
+    }
+    return valorFinal
+}
+
+fun main() {
+    val valorFinal = calcularInvestimento(1500.0, 8.0, 5)
+    println("Valor final: R$: %.2f".format(valorFinal))
+}
