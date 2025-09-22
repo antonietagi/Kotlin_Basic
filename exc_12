@@ -1,0 +1,11 @@
+fun main() {
+    val colecao: List<Any> = listOf("Kotlin", 5, 3.14, 8, true, 10, "Java")
+    
+    var soma = 0
+    for(item in colecao) {
+        if (item is Int) {
+            soma += item
+        }
+    }
+	println(soma)
+}
