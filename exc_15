@@ -1,0 +1,27 @@
+fun main() {
+    val dados: Map<Any, Any> = mapOf(
+    	1 to "UFMG",
+        true to "USCS",
+        "USCS" to 12.5,
+        false to 8,
+        3 to 5.75F,
+        4.0 to "USP"
+    )
+    var soma1 = 0.0
+    for((chave,valor) in dados) {
+        if(valor is Double)
+        soma1 += valor
+    }
+    
+    val dadosAlterados: MutableMap<Any, Any> = dados.toMutableMap()
+    dadosAlterados["6"] = 42
+    dadosAlterados[6] = 20.5F
+    
+    var soma2 = 0.0F
+    for((chave,valor) in dadosAlterados) {
+        if (valor is Float)
+        	soma2 += valor
+    }
+    println((soma1+soma2).toInt())
+    
+}
