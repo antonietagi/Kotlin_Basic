@@ -1,0 +1,35 @@
+fun main () {
+    val items: Set<Any> = setOf(
+    	"UFRJ",
+    	"TI",
+    	2.5,
+    	3,
+        2.5,
+        3,
+        "4AN",
+        "5BN"
+    )
+    
+    var s1 = 0.0
+    var s2 = 0
+    var s3 = 0.0F
+    
+    for(valor in items) {
+        if(valor is Double)
+        	s1 += valor
+        if (valor is Int)
+        	s2 += valor
+    }
+    
+    val items2: MutableSet<Any> = items.toMutableSet()
+    items2.add(15F)
+    items2.add(25F)
+    items2.add(15F)
+    
+    for (valor in items2) {
+        if (valor is Float)
+         s3 += valor
+    }
+    
+    println((s1+s2+s3).toInt())
+}
